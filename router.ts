@@ -1,6 +1,6 @@
 import { ServerRequest } from "https://deno.land/std@0.190.0/http/server.ts";
 import { pathToRegexp } from "https://raw.githubusercontent.com/pillarjs/path-to-regexp/master/src/index.ts";
-import { findUserById, findPostById, routeNotFound } from "./controllers.ts";
+import { findUserById, findPostById, routeNotFound, staticFile } from "./controllers.ts";
 
 interface Route {
   name: string; // name of the route, just for tracking

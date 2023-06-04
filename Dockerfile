@@ -1,10 +1,8 @@
-FROM hayd/deno:latest
-
-EXPOSE 8000
+FROM denoland/deno:latest as base
 
 WORKDIR /app
 
-ADD . /app
+COPY . ./
 
 RUN deno cache server.ts
 

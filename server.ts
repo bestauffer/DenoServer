@@ -1,10 +1,5 @@
-import { serve } from "https://deno.land/std@0.184.0/http/server.ts";
-//const BOOK_ROUTE = new URLPattern({ pathname: "/books/:id" });
+import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
-function handler(): Response {
+serve(_req => new Response("Hello world from Deno!"), { port: 8080 });
 
-    return new Response(`Hello`);
-
-}
-console.log("Listening on http://localhost:8000");
-serve(handler);
+console.log(`HTTP server is running at: http://localhost:8080/`);

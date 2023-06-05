@@ -1,4 +1,4 @@
-import { ServerRequest } from "https://deno.land/std@0.190.0/http/server.ts";
+import { ServerRequest } from "https://deno.land/std@0.106.0/http/server.ts";
 import { pathToRegexp } from "./regexp.ts";
 import { findUserById, findPostById, routeNotFound, staticFile } from "./controllers.ts";
 

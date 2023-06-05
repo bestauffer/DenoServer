@@ -1,4 +1,4 @@
-import { ServerRequest } from "https://deno.land/std@0.190.0/http/server.ts";
+import { ServerRequest } from "https://deno.land/std@0.106.0/http/server.ts";
 import { getUserById } from "./users.ts";
 import { getPostById } from "./posts.ts";
 const fromRoot = (str: string) => Deno.cwd() + "/static/" + str;

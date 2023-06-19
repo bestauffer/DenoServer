@@ -523,7 +523,7 @@ interface LexToken {
      */
     encode?: (value: string) => string;
   }
-  
+  //
   /**
    * Expose a function for taking tokens and returning a RegExp.
    */

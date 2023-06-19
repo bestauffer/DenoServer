@@ -2,7 +2,7 @@ import { sprintf, printf } from "https://deno.land/std/fmt/printf.ts";
 import { rgb8, bgRgb8 } from "https://deno.land/std/fmt/colors.ts";
 
 // Copyright 2018-2020 https://github.com/deepakshrma. All rights reserved. MIT license.
-
+//
 /**
  * LogLevel: Enum => 0 | 1 | 2 | 3
  */

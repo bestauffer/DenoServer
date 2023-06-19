@@ -15,7 +15,7 @@ const routes: Route[] = [
 ];
 
 function router(req: ServerRequest) {
-  for (let route of routes) {
+  for (const route of routes) {
     const reg = pathToRegexp(route.path);
     const match = reg.exec(req.url);
     if (match) return route.handler(req, match);

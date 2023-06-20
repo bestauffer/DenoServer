@@ -29,6 +29,7 @@ export async function staticFile(req: ServerRequest, match: RegExpExecArray) {
     const filename = match[1];
     const strPath = fromRoot(filename);
     try {
+      console.log(strPath);
       req.respond({ body: await Deno.open(strPath) });
     } catch (err) {
       routeNotFound(req);
@@ -37,6 +38,7 @@ export async function staticFile(req: ServerRequest, match: RegExpExecArray) {
     return routeNotFound(req);
   }
 }
+
 export function routeNotFound(req: ServerRequest) {
   req.respond({ body: "404! Page Not Found!" });
 }
